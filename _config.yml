@@ -1,11 +1,11 @@
 # Site settings
-author: Cedric Joaquin
-title: 
+author: Cedric
+title: Breaking Through in Tech
 header-img: img/home-bg.png
 email: joaquin.cedric@gmail.com
-copyright_name: Cedric Joaquin
+copyright_name: Cedric
 description: > # this means to ignore newlines until "baseurl:"
-  
+  Journey to becoming a Developer
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  cedric-joaquin
