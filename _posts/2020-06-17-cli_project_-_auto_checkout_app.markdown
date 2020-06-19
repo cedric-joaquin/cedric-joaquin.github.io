@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "CLI Project - Auto Checkout App"
-date:       2020-06-18 01:50:18 +0000
+date:       2020-06-17 21:50:19 -0400
 permalink:  cli_project_-_auto_checkout_app
 ---
 
@@ -16,8 +16,22 @@ I would say writing the scraping portion of my project took a good chunk of my t
 
 The tops/sweaters webpage listed all products available along with their styles. However, to get the available sizes for each unique product/style combination, I had to access each individual products webpage. This caused performance issues if I tried to scrape it all at once when the app is loaded. Instead, I chose to scrape the categories at startup, but scrape the products in their respective categories when needed. This led to faster scraping times. Once the products for a certain category was stored, it no longer scraped for that category.
 
+With the way the website is setup, each product style had its own available sizes. I figured the best way to store this data is by giving my product styles array which stores hashes. Each hash stored a key/value pair of the style itself and an array of sizes available, as well as the product link for that style.
 
-Coding the logic of the app was pretty straightforward, the only real obstacles I ran into was working on handling edge cases where user input was invalid.
+```
+            style = {
+                prod.css("div.product-style").text.to_sym => sizes,
+                :link => link
+            }
+```
+
+The tricky part of doing it this way was accessing the sizes when it was needed:
+
+`product.styles.find{|a|a.keys[0] == style}[style][CLI.to_index(input)]`
+
+In order to retrieve the specific size the user wanted, the program needed to first iterate over the product's `styles` array of hashes and find the hash that contained the specific style. It then needed to access the array of sizes, which was stored as a value in the style key. Once it retrieved the array, it selected the appropriate size based on user input.
+
+Coding the logic of the app was pretty straightforward, the only other obstacle I ran into was working on handling edge cases where user input was invalid.
 
 ## The App
 
