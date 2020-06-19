@@ -19,15 +19,15 @@ The tops/sweaters webpage listed all products available along with their styles.
 With the way the website is setup, each product style had its own available sizes. I figured the best way to store this data is by giving my product styles array which stores hashes. Each hash stored a key/value pair of the style itself and an array of sizes available, as well as the product link for that style.
 
 ```
-            style = {
-                prod.css("div.product-style").text.to_sym => sizes,
-                :link => link
-            }
+style = {
+  prod.css("div.product-style").text.to_sym => sizes,
+  :link => link
+  }
 ```
 
 The tricky part of doing it this way was accessing the sizes when it was needed:
 
-`product.styles.find{|a|a.keys[0] == style}[style][CLI.to_index(input)]`
+```product.styles.find{|a|a.keys[0] == style}[style][CLI.to_index(input)]```
 
 In order to retrieve the specific size the user wanted, the program needed to first iterate over the product's `styles` array of hashes and find the hash that contained the specific style. It then needed to access the array of sizes, which was stored as a value in the style key. Once it retrieved the array, it selected the appropriate size based on user input.
 
@@ -51,5 +51,5 @@ I've also learned (and am still learning) how to search and read documentation e
 
 ## Summary
 
-Overall, this project was a tough one just based on the sheer amount of scraping I had to do. I decided to go deeper than one level which made writing my scraping methods a little more complex. However, I've gotten a deeper understanding of OOP and my app is indicative of that. 
+Overall, this project was a tough one just based on the sheer amount of scraping I had to do. I decided to go deeper than one level which made writing my scraping methods and accessing the data a little more complex. However, I've gotten a deeper understanding of OOP thanks to the difficulty of this project.
 
