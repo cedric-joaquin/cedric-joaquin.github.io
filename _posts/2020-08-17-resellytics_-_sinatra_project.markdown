@@ -6,7 +6,7 @@ permalink:  resellytics_-_sinatra_project
 ---
 
 
-Since we learned how to manage databases in the Sinatra module with ActiveRecord, I wanted to create something that was relevant and useful for me, some sort of collection-tracker. I like to collect and resell shoes as a hobby, and for the most part I've used a google sheet to track all my inventory and expenses. While it got the job done, it wasn't very pleasing to look at - so I figured this would be a good idea to use as my project, a web-app that provides analytics for a reseller -- *resellytics*
+Since we learned how to manage databases in the Sinatra module with ActiveRecord, I wanted to create something that was relevant and useful for me, some sort of collection-tracker. I like to collect and resell shoes as a hobby, and for the most part I've used a google sheet to track all my inventory and expenses. While it got the job done, it wasn't very pleasing to look at - so I figured this would be a good idea to use as my project, a web-app that provides analytics for a reseller -- ***resellytics***
 
 ## The App
 When you first access the website you are greeted with the welcome page instructing you to login or signup for the app.
