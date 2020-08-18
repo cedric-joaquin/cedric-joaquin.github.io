@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Resellytics - Sinatra Project"
-date:       2020-08-18 03:03:58 +0000
+date:       2020-08-17 23:03:58 -0400
 permalink:  resellytics_-_sinatra_project
 ---
 
@@ -11,15 +11,15 @@ Since we learned how to manage databases in the Sinatra module with ActiveRecord
 ## The App
 When you first access the website you are greeted with the welcome page instructing you to login or signup for the app.
 
-!(https://imgur.com/e8S3eXf)
+![](https://imgur.com/e8S3eXf.jpg)
 
 Upon successful signup/login, you are redirected to your dashboard where a summary of your inventory and expenses are listed.
 
-![](https://imgur.com/71af8FE)
+![](https://imgur.com/71af8FE.jpg)
 
 Clicking on the Inventory or Expenses link will take you to their respective index page which shows you a full list of all your items. 
 
-![](https://imgur.com/1SE2IAP)
+![](https://imgur.com/1SE2IAP.jpg)
 
 From here you can select a specific item to edit its details, or remove it from your collection.
 
