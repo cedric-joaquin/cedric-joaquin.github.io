@@ -23,9 +23,9 @@ Clicking on the Inventory or Expenses link will take you to their respective ind
 
 From here you can select a specific item to edit its details, or remove it from your collection.
 
-![](https://imgur.com/MvJx2rN)
+![](https://imgur.com/MvJx2rN.jpg)
 
-![](https://imgur.com/ONbO4Qm)
+![](https://imgur.com/ONbO4Qm.jpg)
 
 ## Challenges
 
