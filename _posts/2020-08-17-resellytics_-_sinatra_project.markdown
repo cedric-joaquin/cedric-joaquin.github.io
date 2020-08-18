@@ -15,7 +15,7 @@ When you first access the website you are greeted with the welcome page instruct
 
 Upon successful signup/login, you are redirected to your dashboard where a summary of your inventory and expenses are listed.
 
-![](https://imgur.com/71af8FE.jpg)
+![](https://imgur.com/B8eyBg6.jpg)
 
 Clicking on the Inventory or Expenses link will take you to their respective index page which shows you a full list of all your items. 
 
